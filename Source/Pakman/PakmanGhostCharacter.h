@@ -32,4 +32,16 @@ public:
 	{
 		Name = NewName;
 	}
+
+	UFUNCTION(BlueprintCallable,BlueprintSetter)
+	void SetColor(const FLinearColor& NewColor)
+	{
+		Color = NewColor;
+	}
+
+	UFUNCTION(BlueprintCallable, BlueprintSetter)
+	void SetTolerance(float NewTolerance)
+	{
+		ToleranceRadius = NewTolerance;
+	}
 };

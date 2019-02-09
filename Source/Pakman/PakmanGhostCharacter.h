@@ -34,10 +34,7 @@ public:
 	}
 
 	UFUNCTION(BlueprintCallable,BlueprintSetter)
-	void SetColor(const FLinearColor& NewColor)
-	{
-		Color = NewColor;
-	}
+	void SetColor(const FLinearColor& NewColor);
 
 	UFUNCTION(BlueprintCallable, BlueprintSetter)
 	void SetTolerance(float NewTolerance)

@@ -5,7 +5,6 @@
 #include "CoreMinimal.h"
 #include "Engine/GameInstance.h"
 #include "HUD/MenuInterface.h"
-#include "HUD/MainMenu.h"
 #include "PakmanGameInstance.generated.h"
 
 /**

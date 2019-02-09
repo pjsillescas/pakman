@@ -6,7 +6,7 @@
 
 #include "Runtime/Engine/Classes/GameFramework/PlayerController.h"
 #include "UObject/ConstructorHelpers.h"
-//#include "MenuSystem/MainMenu.h"
+#include "HUD/MainMenu.h"
 //#include "MenuSystem/InGameMenu.h"
 #include "Runtime/UMG/Public/Blueprint/UserWidget.h"
 #include "Runtime/Engine/Classes/Kismet/GameplayStatics.h"
@@ -45,6 +45,12 @@ UPakmanGameInstance::UPakmanGameInstance(const FObjectInitializer & ObjectInitia
 	}
 	
 	// Arrays
+	GhostColors.Add(FLinearColor(255. / 255., 51. / 255., 153. / 255.,1));
+	GhostColors.Add(FLinearColor(0, 153. / 255., 153./255.,1));
+	GhostColors.Add(FLinearColor(153. / 255., 255. / 255., 51. / 255.,1));
+	GhostColors.Add(FLinearColor(204. / 255., 153. / 255., 0,1));
+
+	
 	GhostColors.Add(FLinearColor::Red);
 	GhostColors.Add(FLinearColor::Blue);
 	GhostColors.Add(FLinearColor::Green);
